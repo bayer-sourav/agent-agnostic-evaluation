@@ -273,32 +273,32 @@ Built on top of **OpenTelemetry GenAI conventions + OpenInference**, so existing
 
 ## 9. Proposed Phased Roadmap
 
-**Phase 0 — Foundations (2–3 wks)**
+**Phase 0 — Foundations**
 - Define canonical Run Schema (OTel-aligned).
 - Build 2 reference adapters (LangGraph + black-box HTTP).
 - Storage: Parquet + DuckDB.
 
-**Phase 1 — Core Metrics (3–4 wks)**
+**Phase 1 — Core Metrics**
 - Implement metric registry: success, tool-call F1, latency, cost, faithfulness, safety basics.
 - LLM-judge framework with multi-backend support.
 - CLI + Python SDK.
 
-**Phase 2 — Benchmarks & Environments (4–6 wks)**
+**Phase 2 — Benchmarks & Environments**
 - Integrate τ-bench, GAIA, SWE-bench-lite, a RAG benchmark.
 - Sandboxed environments (Docker, browser via Playwright).
 - Statistical reporting (CIs, paired tests).
 
-**Phase 3 — Reporting Layer (3–4 wks)**
+**Phase 3 — Reporting Layer**
 - Audience-specific dashboards (Business / Eng / Research).
 - Regression detection + CI integration.
 - Exportable scorecards.
 
-**Phase 4 — Production Online Evals (4 wks)**
+**Phase 4 — Production Online Evals**
 - Streaming eval workers.
 - Guardrails + alerting.
 - Failure clustering & dataset curation loop.
 
-**Phase 5 — Ecosystem (ongoing)**
+**Phase 5 — Ecosystem**
 - More adapters (CrewAI, AutoGen, Semantic Kernel, MCP).
 - Community metric/dataset plug-ins.
 - Reproducibility bundles & public leaderboards.
